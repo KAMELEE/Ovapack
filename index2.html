@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OVA | حلول تغليف مستدامة معتمدة .eco</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+        :root {
+            --ova-green: #2D5A43;
+            --ova-blue: #00AEEF;
+            --bg-creme: #F9F8F4; 
+            --eco-link: #4CAF50;
+        }
+
+        body {
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+            background-color: var(--bg-creme);
+            color: #1A1A1A;
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Cinema Style */
+        .hero { height: 100vh; position: relative; overflow: hidden; }
+        .hero-video-wrap { position: absolute; inset: 0; z-index: -1; }
+        video { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.65); }
+
+        .mega-title {
+            font-size: clamp(3rem, 11vw, 11rem);
+            line-height: 0.85;
+            letter-spacing: -0.05em;
+            font-weight: 700;
+            color: white;
+        }
+
+        /* Navigation */
+        nav {
+            backdrop-filter: blur(20px);
+            background: rgba(249, 248, 244, 0.8);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .section-padding { padding: 140px 0; }
+
+        .tag {
+            padding: 5px 15px;
+            border-radius: 100px;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border: 1px solid currentColor;
+        }
+
+        /* .eco Section Highlight */
+        .eco-commitment {
+            background: white;
+            border: 1px solid #eee;
+            border-radius: 40px;
+            padding: 60px;
+        }
+
+        /* Catalog Lists */
+        .product-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        .product-row:hover { padding-right: 15px; border-bottom-color: var(--ova-green); }
+
+        .sdg-icon {
+            width: 60px; height: 60px;
+            background: #eee;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 10px; text-align: center; font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-[100] px-10 py-6 flex justify-between items-center">
+        <div class="flex items-center gap-6">
+            <div class="text-3xl font-bold tracking-tighter text-green-900">
+                OVA<span class="text-blue-500">.</span>
+            </div>
+            <a href="https://profiles.eco/ova" target="_blank" class="hidden sm:block">
+                <span class="text-[10px] bg-green-100 text-green-700 px-3 py-1 rounded-full font-bold uppercase tracking-widest border border-green-200">Certified .eco</span>
+            </a>
+        </div>
+        <div class="hidden lg:flex gap-12 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-500">
+            <a href="#impact" class="hover:text-black">الأثر</a>
+            <a href="#commitment" class="hover:text-black">الالتزام</a>
+            <a href="#catalog" class="hover:text-black">المنتجات</a>
+            <a href="#contact" class="hover:text-black">تواصل</a>
+        </div>
+        <button class="bg-green-900 text-white px-8 py-3 rounded-full text-[10px] font-bold uppercase tracking-widest hover:scale-105 transition">Business Inquiry</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center text-center">
+        <div class="hero-video-wrap">
+            <video autoplay muted loop playsinline poster="https://vela.eco/wp-content/uploads/2023/04/Vela-Hero-Poster.jpg">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-top-view-of-a-tranquil-forest-stream-530-large.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="z-10" data-aos="fade-up" data-aos-duration="1500">
+            <h1 class="mega-title">CLEANER<br><span class="opacity-50 italic font-light">FUTURE.</span></h1>
+            <p class="text-white text-lg md:text-2xl mt-12 font-light max-w-3xl mx-auto opacity-90 leading-relaxed px-6">
+                بصفتنا عضواً معتمداً في مجتمع <span class="text-green-400 font-bold">.eco</span>، تلتزم OVA بتقديم حلول تغليف نباتية 100% تدعم الاقتصاد الدائري في المملكة العربية السعودية.
+            </p>
+        </div>
+    </section>
+
+    <!-- .eco Commitment Section (New Content) -->
+    <section id="commitment" class="section-padding bg-white">
+        <div class="container mx-auto px-10">
+            <div class="eco-commitment flex flex-col lg:flex-row gap-20 items-center" data-aos="fade-up">
+                <div class="lg:w-1/2">
+                    <span class="tag text-green-600 mb-6 inline-block">Environmental Stewardship</span>
+                    <h2 class="text-5xl font-bold mb-8 leading-tight text-green-900">أكثر من مجرد منتج، إنه التزام موثق.</h2>
+                    <p class="text-gray-500 text-lg leading-relaxed mb-8">
+                        حصولنا على نطاق <span class="font-bold text-black">.eco</span> هو شهادة على التزامنا العلني بالاستدامة. نحن لا نكتفي بالحد من التلوث، بل نعمل على تحسين جودة الحياة تحت الماء (SDG 14) ودعم الاستهلاك المسؤول (SDG 12).
+                    </p>
+                    <div class="flex gap-4">
+                        <div class="sdg-icon bg-blue-500 text-white p-2">SDG 12</div>
+                        <div class="sdg-icon bg-blue-700 text-white p-2">SDG 14</div>
+                        <div class="sdg-icon bg-green-600 text-white p-2">SDG 13</div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 grid grid-cols-2 gap-4">
+                    <div class="bg-stone-50 p-10 rounded-2xl">
+                        <h4 class="font-bold text-2xl mb-2 text-blue-500">Plant-Based</h4>
+                        <p class="text-xs text-gray-400 uppercase tracking-widest leading-loose">مواد متجددة من نشا الكاسافا</p>
+                    </div>
+                    <div class="bg-stone-50 p-10 rounded-2xl">
+                        <h4 class="font-bold text-2xl mb-2 text-blue-500">Non-Toxic</h4>
+                        <p class="text-xs text-gray-400 uppercase tracking-widest leading-loose">آمنة على التربة والمحيطات</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why OVA (Stats Page 2) -->
+    <section id="impact" class="section-padding">
+        <div class="container mx-auto px-10">
+            <div class="mb-24 text-center max-w-4xl mx-auto">
+                <h3 class="text-7xl font-bold tracking-tighter mb-10" data-aos="fade-up">#I AM NOT PLASTIC</h3>
+                <p class="text-xl text-gray-500 font-light" data-aos="fade-up" data-aos-delay="100">
+                    كل قطعة بلاستيك استُخدمت منذ ابتكار المادة لا تزال موجودة في بيئتنا. أكياس OVA تذوب في الماء الساخن وتتحلل في الطبيعة خلال أشهر، لتعود كجزء من الأرض.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-1" data-aos="fade-up">
+                <div class="bg-white p-16 border border-black/5">
+                    <span class="text-5xl font-bold text-red-600">100,000</span>
+                    <p class="text-[11px] uppercase tracking-widest text-gray-400 mt-6 leading-relaxed">حيوان بحري يموت سنوياً بسبب التلوث البلاستيكي.</p>
+                </div>
+                <div class="bg-white p-16 border border-black/5">
+                    <span class="text-5xl font-bold text-green-900">83%</span>
+                    <p class="text-[11px] uppercase tracking-widest text-gray-400 mt-6 leading-relaxed">من مياه الشرب عالمياً أصبحت تحتوي على ميكروبلاستيك.</p>
+                </div>
+                <div class="bg-white p-16 border border-black/5">
+                    <span class="text-5xl font-bold text-blue-500">Vision</span>
+                    <p class="text-[11px] uppercase tracking-widest text-gray-400 mt-6 leading-relaxed">حلول OVA تدعم مبادرة السعودية الخضراء ورؤية 2030.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Catalog List (from PDF) -->
+    <section id="catalog" class="section-padding bg-white">
+        <div class="container mx-auto px-10">
+            <div class="flex justify-between items-end mb-20">
+                <div>
+                    <span class="text-xs font-bold text-gray-400 uppercase tracking-[0.4em]">Products Catalog 2025</span>
+                    <h2 class="text-6xl font-bold mt-4">حلول التغليف المتكاملة</h2>
+                </div>
+                <a href="#" class="text-xs font-bold border-b-2 border-green-900 pb-2 hover:opacity-50">تحميل الكتالوج الكامل (PDF)</a>
+            </div>
+
+            <!-- List Category: Food Containers -->
+            <div class="mb-24">
+                <h3 class="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400 mb-6">Sustainable Food Containers (Pulp/PLA)</h3>
+                <div class="product-row group">
+                    <div>
+                        <span class="text-[10px] text-gray-300">PPULP12024 / PPUL18026</span>
+                        <h4 class="text-2xl font-bold uppercase">Buddha Bowl & Oval Bowl (750-770ml)</h4>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-[10px] block text-gray-400">SKU CODE</span>
+                        <span class="tag group-hover:bg-green-900 group-hover:text-white transition">Microwavable</span>
+                    </div>
+                </div>
+                <div class="product-row group">
+                    <div>
+                        <span class="text-[10px] text-gray-300">PHG1C450ML / PHG4C1000RT</span>
+                        <h4 class="text-2xl font-bold uppercase">Hinged Containers (1 to 4 Compartments)</h4>
+                    </div>
+                    <div class="text-right">
+                        <span class="tag group-hover:bg-green-900 group-hover:text-white transition">Leak Proof</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- List Category: OVA Specials -->
+            <div class="mb-24">
+                <h3 class="text-[10px] font-bold uppercase tracking-[0.3em] text-blue-500 mb-6">OVA SPECIALS (CASSAVA TECHNOLOGY)</h3>
+                <div class="product-row group">
+                    <h4 class="text-2xl font-bold uppercase">OVA T-Shirt & Griphole Bags</h4>
+                    <span class="tag text-blue-500 group-hover:bg-blue-500 group-hover:text-white">Water Soluble</span>
+                </div>
+                <div class="product-row group">
+                    <h4 class="text-2xl font-bold uppercase">Garbage & Fold-Shirt Bags</h4>
+                    <span class="tag text-blue-500 group-hover:bg-blue-500 group-hover:text-white">Compostable</span>
+                </div>
+                <div class="product-row group">
+                    <h4 class="text-2xl font-bold uppercase">Compostable Cling Film (12 Microns)</h4>
+                    <span class="tag text-blue-500 group-hover:bg-blue-500 group-hover:text-white">1000M Bulk</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners & Trust -->
+    <section class="section-padding bg-stone-100">
+        <div class="container mx-auto px-10 grid lg:grid-cols-2 gap-32">
+            <div data-aos="fade-up">
+                <h3 class="text-4xl font-bold mb-10">سلسلة توريد عالمية.</h3>
+                <p class="text-gray-500 text-lg leading-relaxed font-light">نحن نختار شركائنا بناءً على معايير بيئية صارمة لتقليل البصمة الكربونية. شبكتنا تغطي السعودية، السويد، فرنسا، الصين، وإسبانيا.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-4xl font-bold mb-10">شهادات الجودة.</h3>
+                <div class="flex flex-wrap gap-4">
+                    <span class="tag border-gray-300 text-gray-500">ISO 9001:2015</span>
+                    <span class="tag border-gray-300 text-gray-500">ISO 14001:2015</span>
+                    <span class="tag border-gray-300 text-gray-400">FSC Certified</span>
+                    <span class="tag border-gray-300 text-gray-400">CE Declaration</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- B2B Contact -->
+    <section id="contact" class="section-padding bg-green-900 text-white">
+        <div class="container mx-auto px-10">
+            <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-32">
+                <div class="lg:w-1/2" data-aos="fade-right">
+                    <h2 class="text-7xl font-bold tracking-tighter mb-10">جاهز للتغيير؟</h2>
+                    <p class="text-white/60 text-xl font-light mb-16">اتصل بنا اليوم للحصول على استشارة حول كيفية تحويل تغليف علامتك التجارية إلى بدائل مستدامة بالكامل.</p>
+                    <div class="space-y-6 text-sm font-bold tracking-[0.2em]">
+                        <p>RIYADH, SAUDI ARABIA</p>
+                        <p>INFO@OVAPAC.COM</p>
+                        <p>+966 583 000 068</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/2" data-aos="fade-left">
+                    <form class="space-y-8">
+                        <input type="text" placeholder="اسم الشركة" class="w-full bg-transparent border-b border-white/20 py-4 outline-none focus:border-blue-500 transition">
+                        <input type="email" placeholder="البريد الإلكتروني" class="w-full bg-transparent border-b border-white/20 py-4 outline-none focus:border-blue-500 transition">
+                        <textarea placeholder="أخبرنا عن الكميات والمنتجات المطلوبة..." class="w-full bg-transparent border-b border-white/20 py-4 h-32 outline-none focus:border-blue-500 transition"></textarea>
+                        <button class="bg-white text-green-900 px-16 py-6 rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-blue-500 hover:text-white transition">إرسال الطلب</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-white px-10 border-t border-black/5 flex flex-col lg:flex-row justify-between items-center text-[9px] font-bold uppercase tracking-[0.4em] text-gray-400">
+        <div>© 2025 OVAPAC SUSTAINABLE SOLUTIONS</div>
+        <div class="my-4 lg:my-0">CERTIFIED MEMBER OF THE .ECO COMMUNITY</div>
+        <div>BY GREEN RUYA LLC</div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1200, once: true });
+    </script>
+</body>
+</html>
