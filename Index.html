@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OVA | حلول تغليف مستدامة - رؤية 2030</title>
+    
+    <!-- الخطوط والمكتبات -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+        :root {
+            --ova-green: #2D5A43; /* الأخضر العميق */
+            --ova-blue: #00AEEF;  /* الأزرق الساطع من الشعار */
+            --off-white: #FBFBFA;
+        }
+
+        body {
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+            background-color: var(--off-white);
+            color: #1a1a1a;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        /* Hero Section Styling */
+        .hero {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #000; /* خلفية احتياطية */
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            opacity: 0.7; /* تعتيم الفيديو لبروز النص */
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.2));
+            z-index: 2;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        /* Typography - Vela Style */
+        .mega-text {
+            font-size: clamp(2.5rem, 8vw, 7rem);
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: -2px;
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            background-color: var(--ova-green);
+            color: white;
+            padding: 16px 40px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            background-color: #1e3d2d;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0; width: 100%;
+            z-index: 100;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.4s;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--ova-green);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .logo span { color: var(--ova-blue); }
+
+        /* Sections Backgrounds */
+        .section-white { background: #ffffff; padding: 100px 20px; }
+        .section-stone { background: #f4f4f2; padding: 100px 20px; }
+
+        .stat-card {
+            border-right: 4px solid var(--ova-blue);
+            padding-right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">OVA<span>.</span><small class="text-[10px] text-gray-400 font-normal mr-2">SAUDI ARABIA</small></div>
+        <div class="hidden md:flex gap-10 text-xs font-bold uppercase tracking-widest text-gray-600">
+            <a href="#about" class="hover:text-green-800">من نحن</a>
+            <a href="#products" class="hover:text-green-800">المنتجات</a>
+            <a href="#vision" class="hover:text-green-800">رؤية 2030</a>
+        </div>
+        <a href="#contact" class="btn-primary py-2 px-6 text-xs">اتصل بنا</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-forest-stream-in-the-sunlight-529-large.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content" data-aos="zoom-out" data-aos-duration="1500">
+            <h1 class="mega-text uppercase">#I AM NOT<br>PLASTIC</h1>
+            <p class="text-xl md:text-2xl font-light mb-10 max-w-3xl mx-auto opacity-90">
+                نستبدل البلاستيك بحلول مستدامة من نشا الكاسافا. صُنعت في السعودية من أجل كوكب أفضل.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#products" class="btn-primary text-lg">تصفح المنتجات</a>
+                <div class="flex items-center gap-2 text-sm font-bold tracking-widest">
+                    <span class="w-8 h-[1px] bg-white"></span>
+                    رؤية 2030
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section (Impact) -->
+    <section id="about" class="section-white">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+            <div data-aos="fade-right">
+                <h2 class="text-blue-500 font-bold tracking-widest text-sm mb-4 uppercase">الأثر والواقع</h2>
+                <h3 class="text-5xl font-bold text-green-900 mb-8 leading-tight">كل قطعة بلاستيك صُنعت لا تزال موجودة حتى اليوم.</h3>
+                <p class="text-gray-500 text-lg leading-relaxed mb-8">
+                    أكياس OVA ليست مجرد بديل، بل هي حل جذري. مصنوعة من نشا الكاسافا الطبيعي، تتحلل خلال أشهر وتذوب في الماء الساخن دون ترك أي أثر سام.
+                </p>
+                <div class="grid grid-cols-2 gap-10">
+                    <div class="stat-card">
+                        <span class="text-4xl font-bold text-green-900">0%</span>
+                        <p class="text-xs text-gray-400 uppercase mt-1">بلاستيك تقليدي</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="text-4xl font-bold text-green-900">100%</span>
+                        <p class="text-xs text-gray-400 uppercase mt-1">قابل للتحلل</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative h-[500px]" data-aos="fade-left">
+                <img src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?auto=format&fit=crop&q=80" class="w-full h-full object-cover rounded-2xl shadow-2xl" alt="Nature">
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Grid (Vela Minimalist Style) -->
+    <section id="products" class="section-stone">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-16">
+                <h2 class="text-4xl font-bold text-green-900">مجموعات OVA</h2>
+                <p class="text-gray-400 text-sm max-w-xs">حلول تغليف متكاملة للمطاعم والفنادق والشركات المهتمة بالبيئة.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+                <div class="bg-white p-10 h-[400px] flex flex-col justify-between group hover:bg-green-900 transition-all duration-500" data-aos="fade-up">
+                    <h4 class="text-2xl font-bold group-hover:text-white transition">الأكياس القابلة للتحلل</h4>
+                    <ul class="text-sm text-gray-400 group-hover:text-gray-300">
+                        <li>• أكياس تسوق (T-shirt)</li>
+                        <li>• أكياس نفايات</li>
+                        <li>• كلينج فيلم مستدام</li>
+                    </ul>
+                    <a href="#" class="text-blue-500 font-bold text-xs uppercase tracking-widest group-hover:text-white">اكتشف المزيد ←</a>
+                </div>
+                <div class="bg-white p-10 h-[400px] flex flex-col justify-between group hover:bg-green-900 transition-all duration-500" data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="text-2xl font-bold group-hover:text-white transition">أدوات مائدة خضراء</h4>
+                    <ul class="text-sm text-gray-400 group-hover:text-gray-300">
+                        <li>• شفاطات نباتية</li>
+                        <li>• أطقم خيزران</li>
+                        <li>• ملاعق نشا الذرة</li>
+                    </ul>
+                    <a href="#" class="text-blue-500 font-bold text-xs uppercase tracking-widest group-hover:text-white">اكتشف المزيد ←</a>
+                </div>
+                <div class="bg-white p-10 h-[400px] flex flex-col justify-between group hover:bg-green-900 transition-all duration-500" data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="text-2xl font-bold group-hover:text-white transition">أكواب وعبوات</h4>
+                    <ul class="text-sm text-gray-400 group-hover:text-gray-300">
+                        <li>• أكواب ورقية FSC</li>
+                        <li>• أطباق قصب السكر</li>
+                        <li>• عبوات قابلة للميكروويف</li>
+                    </ul>
+                    <a href="#" class="text-blue-500 font-bold text-xs uppercase tracking-widest group-hover:text-white">اكتشف المزيد ←</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision 2030 / Contact -->
+    <section id="vision" class="section-white overflow-hidden">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20">
+            <div data-aos="fade-up">
+                <h2 class="text-5xl font-bold text-green-900 mb-8">نصنع المستقبل في الرياض.</h2>
+                <p class="text-gray-500 text-lg mb-10">
+                    كعلامة تجارية سعودية، نساهم في تحقيق أهداف رؤية المملكة 2030 من خلال توطين الصناعات المستدامة وتقليل الاعتماد على البلاستيك التقليدي.
+                </p>
+                <div class="space-y-4 font-bold">
+                    <p class="text-green-800 tracking-tighter">📍 Mazaya Tower, Office 901, Riyadh</p>
+                    <p class="text-green-800 tracking-tighter">📧 info@ovapac.com</p>
+                    <p class="text-green-800 tracking-tighter">📞 +966 583 000 068</p>
+                </div>
+            </div>
+            <div class="bg-stone-100 p-10 rounded-3xl" data-aos="fade-left">
+                <form class="grid gap-4">
+                    <input type="text" placeholder="الاسم" class="w-full p-4 rounded-xl bg-white border-none outline-none focus:ring-2 focus:ring-blue-500">
+                    <input type="email" placeholder="البريد الإلكتروني" class="w-full p-4 rounded-xl bg-white border-none outline-none focus:ring-2 focus:ring-blue-500">
+                    <textarea placeholder="كيف يمكننا مساعدتك؟" class="w-full p-4 rounded-xl bg-white h-32 border-none outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    <button class="btn-primary w-full py-4 text-lg">إرسال الطلب</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 px-10 text-center border-t border-gray-100">
+        <p class="text-[10px] text-gray-400 uppercase tracking-[0.3em]">
+            © 2025 OVA SUSTAINABLE PACKAGING | BY GREEN RUYA LLC | MADE IN SAUDI ARABIA
+        </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        // Navbar scroll effect
+        window.onscroll = function() {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.style.padding = '15px 60px';
+                nav.style.boxShadow = '0 10px 30px rgba(0,0,0,0.05)';
+            } else {
+                nav.style.padding = '20px 60px';
+                nav.style.boxShadow = 'none';
+            }
+        };
+    </script>
+</body>
+</html>
